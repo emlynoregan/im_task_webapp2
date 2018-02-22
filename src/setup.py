@@ -7,15 +7,15 @@ except ImportError:
     from distutils.core import setup
 
 dist = setup(
-    name='im_task',
+    name='im_task_webapp2',
     version='0.0.1dev1',
-    description='@task for Google App Engine, Python standard environment',
+    description='webapp2 handlers for @task. Use this in your webapp2 app. Also supports webapp',
     author='Emlyn O\'Regan',
     author_email='emlynoregan@gmail.com',
-    url='https://github.com/emlynoregan/im_task',
+    url='https://github.com/emlynoregan/im_task_webapp2',
     license='LICENSE.txt',
-    packages=['im_task'],
-    install_requires=['im_util', 'cloudpickle'],
+    packages=['im_task_webapp2'],
+    install_requires=['im_task'],
     long_description=open('README.md').read(),
     classifiers=[
         'Development Status :: 3 - Alpha',
