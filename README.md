@@ -1,5 +1,5 @@
 # im_task_webapp2
-This repo adds [WebApp2](https://webapp2.readthedocs.io/en/latest/) support for the [im_task](https://github.com/emlynoregan/im_task) library. If you use webapp2, and you want to use @task, then install this module.
+This repo adds [webapp2](https://webapp2.readthedocs.io/en/latest/) support for the [im_task](https://github.com/emlynoregan/im_task) library. If you use webapp2, and you want to use @task, then install this module.
 
 [![Build Status](https://travis-ci.org/emlynoregan/im_task_webapp2.svg?branch=master)](https://travis-ci.org/emlynoregan/im_task_webapp2)
  
@@ -26,7 +26,7 @@ In app.yaml, set up the following route:
 		  script: main.app
 		  login: admin
 
-Note "login: admin"; this locks down the interface to tasks to your own code; you don't want external callers to kick of tasks with unknown code.
+Note "login: admin"; this locks down the tasks interface to your own code; you don't want external callers to kick off tasks with unknown code.
 
 In main.py, you need to add the @tasks route to the webapp2 routes before constructing the app:
 
